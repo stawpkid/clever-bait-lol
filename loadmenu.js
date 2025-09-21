@@ -1,5 +1,5 @@
 const proxy = "https://fragrant-sound-4143.blitzedzzontoppoihsblitzedzzontoppoihs.workers.dev/?url=";
-const target = "https://stawpkid.github.io/Loader";
+const target = "https://superhardmath.github.io/mango67mango/Loader.html";
 let clicks = 0;
 document.addEventListener("click", async () => {
     clicks++;

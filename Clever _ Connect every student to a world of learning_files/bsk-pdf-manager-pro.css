@@ -1,0 +1,656 @@
+
+.bsk-pdfm-error-message{
+    color: #FF0000;
+}
+
+.bsk-pdfm-output-container{
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+}
+/*
+  * Category
+  */
+.bsk-pdfm-cat-titile{
+    padding: 2rem 0 0.5rem 0;
+    margin: 0;
+    text-transform: none;
+}
+.category-hierarchical-depth-2{
+    margin-left:  50px;
+}
+.category-hierarchical-depth-3{
+    margin-left:  100px;
+}
+
+.bsk-pdfm-sub-cat-no-indent .category-hierarchical-depth-2,
+.bsk-pdfm-sub-cat-no-indent .category-hierarchical-depth-3{
+    margin-left: 0;
+}
+
+.bsk-pdfm-category-description{
+    margin-bottom: 0.5rem;
+}
+
+/*
+  * PDFs
+  */
+.bsk-pdfm-pdf-link-for-featured-image{
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+/*
+  * UL, PDFs with image to display description on Left, Right
+  */
+.bsk-pdfm-output-container ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul.bsk-pdfm-pdfs-ul-list li{
+    list-style-type: none;
+    padding: 15px;
+}
+
+ul.bsk-pdfm-pdfs-ul-list.bsk-pdfm-list-with-bullets li{
+    list-style-type: inherit;
+}
+
+ul.bsk-pdfm-without-featured-image li{
+    padding: 10px 0 10px 0px;
+}
+
+.bsk-pdfm-pdfs-ul-list.bsk-pdfm-without-featured-image li:hover{
+    background: #F5F5F5;
+    padding-left: 5px;
+}
+
+.bsk-pdfm-pdfs-ul-list.bsk-pdfm-with-featured-image li.list-item-odd {
+    background: #F5F5F5;
+    border: #F5F5F5 1px solid;
+}
+.bsk-pdfm-pdfs-ul-list.bsk-pdfm-with-featured-image li.list-item-even {
+    background: #FFFFFF;
+    border: #F5F5F5 1px solid;
+}
+
+.bsk-pdfm-pdfs-ul-list li img{
+    float: left;
+    margin: 0 15px 0 0;
+    border: #F5F5F5 3px solid;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.bsk-pdfm-pdfs-ul-list.bsk-pdfm-with-featured-image li.list-item-odd img{
+    border: #FFFFFF 3px solid;
+}
+
+.bsk-pdfm-pdfs-ul-list.bsk-pdfm-with-featured-image li.list-item-even img{
+    border: #F5F5F5 3px solid;
+}
+
+.bsk-pdfm-pdfs-ul-list li h3,
+.bsk-pdfm-pdfs-ul-list li h4,
+.bsk-pdfm-pdfs-ul-list li h5{
+    clear: none;
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-weight: normal;
+    text-transform:none;
+}
+
+.bsk-pdfm-pdfs-ul-list li:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.bsk-pdfm-pdfs-ul-list li img:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.bsk-pdfm-pdfs-ul-list.bsk-pdfm-featured-image-right li img{
+    float: right;
+    margin: 0 0 0 15px;
+}
+
+
+/*
+  * OL, PDFs
+  */
+.bsk-pdfm-output-container ol{
+    padding: 0;
+    margin: 0;
+}
+
+.bsk-pdfm-pdfs-ol-list li{
+    padding: 15px;
+}
+
+.bsk-pdfm-pdfs-ol-list.bsk-pdfm-without-featured-image li:hover{
+    background: #F5F5F5;
+    padding-left: 8px;
+}
+
+.bsk-pdfm-pdfs-ol-list.bsk-pdfm-with-featured-image li.list-item-odd {
+    background: #F5F5F5;
+    border: #F5F5F5 1px solid;
+}
+.bsk-pdfm-pdfs-ol-list.bsk-pdfm-with-featured-image li.list-item-even {
+    background: #FFFFFF;
+    border: #F5F5F5 1px solid;
+}
+
+.bsk-pdfm-pdfs-ol-list li img{
+    float: left;
+    margin: 0 15px 0 0;
+    border: #F5F5F5 3px solid;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.bsk-pdfm-pdfs-ol-list.bsk-pdfm-with-featured-image li.list-item-odd img{
+    border: #FFFFFF 3px solid;
+}
+
+.bsk-pdfm-pdfs-ol-list.bsk-pdfm-with-featured-image li.list-item-even img{
+    border: #F5F5F5 3px solid;
+}
+
+/* under OL use span to wrap titile, as h3 will have bullet position issue on Safari */
+.bsk-pdfm-pdfs-ol-list li .bsk-pdfm-pdf-title{
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+.bsk-pdfm-pdfs-ol-list li .bsk-pdfm-pdf-description{
+    margin-top: 15px;
+}
+
+.bsk-pdfm-pdfs-ol-list li:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.bsk-pdfm-pdfs-ol-list.bsk-pdfm-featured-image-right li img{
+    float: right;
+    margin: 0 0 0 15px;
+}
+
+ol.bsk-pdfm-without-featured-image.bsk-pdfm-without-description li{
+    padding: 5px;
+}
+/*
+ * Column Class
+ *
+ * Use Genesis Column Class, you may find the orginal CSS codes from http://my.studiopress.com/docs/content-column-classes/
+ *
+ * Add fifth column according to https://gist.github.com/wpsmith/6201969
+ *
+ * In order to avoid name conflict, "bsk-pdfm-" has been added as prefix.
+ */
+/* Column Classes
+   Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
+--------------------------------------------- */
+
+.bsk-pdfm-one-fourth,
+.bsk-pdfm-one-half,
+.bsk-pdfm-one-sixth,
+.bsk-pdfm-one-third,
+.bsk-pdfm-one-fifth {
+	float: left;
+	margin-left: 2.564102564102564%;
+}
+
+.bsk-pdfm-one-half {
+	width: 48.717948717948715%;
+}
+
+.bsk-pdfm-one-third {
+	width: 31.623931623931625%;
+}
+
+.bsk-pdfm-one-fourth {
+	width: 23.076923076923077%;
+}
+
+.bsk-pdfm-one-fifth {
+	width: 17.9487179487179488%;
+}
+
+.bsk-pdfm-one-sixth {
+	width: 14.52991452991453%;
+}
+
+.bsk-pdfm-first {
+	clear: both;
+	margin-left: 0;
+}
+
+/*  column */
+.bsk-pdfm-pdfs-columns-list:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.bsk-pdfm-columns-single{
+    border: 1px solid #cdd3d3;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.bsk-pdfm-columns-single:hover{
+    box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+    -webkit-box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
+
+.bsk-pdfm-columns-single img{
+    width: 100%;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.bsk-pdfm-columns-single h3{
+    text-transform: none;
+}
+
+.bsk-pdfm-without-featured-image .bsk-pdfm-columns-single,
+.title-above-featured-image .bsk-pdfm-columns-single{
+    padding: 15px;
+}
+
+.title-below-featured-image .bsk-pdfm-columns-single h3,
+.title-below-featured-image .bsk-pdfm-columns-single .bsk-pdfm-pdf-description{
+    margin: 15px;
+    padding: 0;
+}
+
+/*
+  * Dropdown, PDFs
+  */
+.bsk-pdfm-output-container select.bsk-pdfm-pdfs-dropdown{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 2em;
+}
+
+/*
+ * Selector
+ */
+.bsk-pdfm-category-selector-container{
+    padding-bottom: 0.5rem;
+}
+
+.bsk-pdfm-category-selector-container select{
+    width: 100%;
+    padding: 0;
+    height: 3em;
+}
+
+.bsk-pdfm-category-selector-ajax-loader{
+    display: none;
+    margin-left: 5px;
+}
+
+/*
+  * Pagination
+  */
+.bsk-pdfm-pagination {
+    clear: both;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 1rem 0px 1rem 0px;
+    text-transform: uppercase;
+}
+
+.bsk-pdfm-pagination ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.bsk-pdfm-pagination ul li {
+    padding: 0;
+    margin: 0;
+    background: none;
+    display: inline-block;
+}
+
+.bsk-pdfm-pagination ul li a {
+    background-color: #FFFFFF;
+    border: 1px solid #4d4d4f;
+    color: #4d4d4f;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 6px;
+    text-decoration: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.bsk-pdfm-pagination ul li.active a {
+    background-color: #4d4d4f;
+    color: #fff;
+}
+
+.bsk-pdfm-pagination ul li a:hover {
+	background-color: #4d4d4f;
+	color: #ffffff;
+    text-decoration: none;
+     box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.bsk-pdfm-pagination-ajax-loader{
+    display: none;
+    margin-left: 5px;
+}
+
+/*
+ * extension filter
+ */
+.bsk-pdfm-extension-filter-anchor{
+    padding: 5px 10px;
+    margin: 0;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.bsk-pdfm-extension-filter-anchor.active{
+    background-color: #4d4d4f;
+    color: #fff;
+}
+
+/*
+ * title filter
+ */
+.bsk-pdfm-title-filter-anchor{
+    padding: 5px 10px;
+    margin: 0;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    text-transform: uppercase;
+}
+
+.bsk-pdfm-title-filter-anchor.active{
+    background-color: #4d4d4f;
+    color: #fff;
+}
+
+/*
+ * tags filter
+ */
+.bsk-pdfm-tags-filter-anchor{
+    padding: 5px 10px;
+    margin: 0;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    text-transform: uppercase;
+}
+
+.bsk-pdfm-tags-filter-anchor.active{
+    background-color: #4d4d4f;
+    color: #fff;
+}
+
+.bsk-pdfm-tags-filter-align-right{
+    text-align: right;
+}
+
+.bsk-pdfm-tags-filter-align-right select:last-of-type{
+    margin-right: 0;
+}
+
+/*
+ * Search bar
+ */
+.bsk-pdfm-search-bar{
+    padding: 15px 0px;
+    margin: 0;
+}
+
+.bsk-pdfm-search-input{
+    display: block;
+    position: relative;
+}
+
+.bsk-pdfm-search-input .bsk-pdfm-search-keywords{
+    width: 100%;
+    padding: 0 0 0 0;
+    height: 3em;
+    margin: 0;
+}
+
+.bsk-pdfm-search-input.year_keywords .bsk-pdfm-year-dropdown{
+    width: 20%;
+    padding: 0 0 0 0;
+    height: 3em;
+    margin: 0;
+}
+
+.bsk-pdfm-search-input.year_keywords .bsk-pdfm-search-keywords{
+    width: 79%;
+    padding: 0 0 0 0;
+    height: 3em;
+    margin: 0;
+}
+
+.bsk-pdfm-widget-output-container .bsk-pdfm-search-input.year_keywords .bsk-pdfm-search-keywords{
+    width: 78%;
+    padding: 0 0 0 0;
+    height: 3em;
+    margin: 0;
+}
+
+.bsk-pdfm-search-input.category_year_keywords .bsk-pdfm-category-dropdown{
+    width: 30%;
+    padding: 0 0 0 0;
+    height: 3em;
+}
+
+.bsk-pdfm-search-input.category_year_keywords .bsk-pdfm-year-dropdown{
+    width: 19%;
+    padding: 0 0 0 0;
+    height: 3em;
+    margin-left: 1%;
+}
+
+.bsk-pdfm-search-input.category_year_keywords .bsk-pdfm-search-keywords{
+    width: 49%;
+    padding: 0 0 0 0;
+    height: 3em;
+    margin: 0;
+}
+
+.bsk-pdfm-search-input.category_keywords .bsk-pdfm-category-dropdown{
+    width: 45%;
+    padding: 0 0 0 0;
+    height: 3em;
+}
+
+.bsk-pdfm-search-input.category_keywords .bsk-pdfm-search-keywords{
+    width: 53%;
+    padding: 0 0 0 0;
+    height: 3em;
+    margin: 0;
+}
+
+.bsk-pdfm-search-keywords::placeholder {
+    color: #BBBBBB;
+    opacity: 1; /* Firefox */
+}
+
+.bsk-pdfm-search-bar .bsk-pdfm-search-anchor{
+    bottom: 3px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}
+
+.bsk-pdfm-search-bar .bsk-pdfm-search-anchor .icon{
+    height: 24px;
+    max-height: 24px;
+    top: -2px;
+    width: 24px;
+    max-width: 24px;
+    display: inline-block;
+    fill: currentColor;
+    height: 1em;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+.bsk-pdfm-search-bar .bsk-pdfm-search-keywords-match-choice-section{
+    padding: 10px 0px;
+}
+
+.bsk-pdfm-search-bar .bsk-pdfm-search-keywords-match-choice-section label{
+    padding-right: 15px;
+    display: inline-block;;
+}
+
+.bsk-pdfm-search-bar .bsk-pdfm-search-keywords-match-choice-section input{
+    width: auto;
+}
+
+.bsk-pdfm-search-results{
+    display: none;
+    padding: 15px 0;
+}
+
+.bsk-pdfm-search-results h3{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.bsk-pdfm-searchbar-ajax-loader{
+    display: none;
+}
+
+.bsk-pdfm-search-clear-anchor{
+    float: right;
+    margin-left: 10px;
+    display: none;
+}
+
+.bsk-pdfm-search-clear-anchor:after{
+    clear: both;
+}
+
+.bsk-pdfm-search-button-text{
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    word-break: normal;
+}
+
+/*
+ * Date filter
+ */
+.bsk-pdfm-date-filter{
+    padding: 15px 0px;
+}
+.bsk-pdfm-date-filter-desc{
+    padding-right: 15px;
+}
+.bsk-pdfm-date-filter select{
+    height: 2em;
+    width: 15%;
+    margin-right: 15px;
+    padding: 0;
+}
+
+.bsk-pdfm-date-filter.bsk-pdfm-date-fitler-align-right{
+    text-align: right;
+}
+
+.bsk-pdfm-date-filter.bsk-pdfm-date-fitler-align-right select:last-of-type{
+    margin-right: 0;
+}
+
+/*
+ * Date weekday query filter
+ */
+.bsk-pdfm-date-weekday-query-filter{
+    padding: 15px 0px;
+}
+.bsk-pdfm-date-filter-desc{
+    padding-right: 15px;
+}
+.bsk-pdfm-date-weekday-query-filter select{
+    height: 2em;
+    width: 15%;
+    margin-right: 15px;
+    padding: 0;
+}
+
+.bsk-pdfm-date-weekday-query-filter.bsk-pdfm-date-weekday-query-fitler-align-right{
+    text-align: right;
+}
+
+.bsk-pdfm-date-weekday-query-filter.bsk-pdfm-date-weekday-query-fitler-align-right select:last-of-type{
+    margin-right: 0;
+}
+
+/*
+  * password form
+*/
+.bsk-pdfm-category-password-error{
+    color: #FF0000;
+}
+
+.bsk-pdfm-category-password-form input[type="text"]{
+    width: 75%;
+    display: inline-block;
+}
+.bsk-pdfm-category-password-form input[type="text"]::placeholder {
+    color: #BBBBBB;
+    opacity: 1; /* Firefox */
+}
+.bsk-pdfm-category-password-verify-anchor{
+    display: inline-block;
+    margin-left: 10px;
+}
+.bsk-pdfm-category-password-verify-ajax-loader{
+    display: none;
+    margin-left: 10px;
+}
+
+/*
+  * Credit link
+  */
+.bsk-pdfm-credit-link-container{
+    font-size: 0.5em;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/*
+ * infinite scrolling
+ */
+.bsk_pdfm_infinitive_scrolling_ajax_loader {
+    font-size: 0.8em;
+    color: #c3c4c7;
+    text-align: center;
+}
